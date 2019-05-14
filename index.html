@@ -5,9 +5,11 @@
 		<title>HTML Academy: Седона</title>
 	</head>
 	<body>
-		<header class="main-header">
+		<header class="page-header">
 			<nav class="main-navigation">
-				<img src="img/logo.svg" alt="Логотип сайта «Sedona»">
+				<div class="logo">
+					<img src="img/logo.svg" alt="Логотип сайта «Sedona»">
+				</div>
 				<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
@@ -16,45 +18,46 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+		<main class="page-content">
+			<section class="promo">
+				<div class="promo-img">
+					<img src="img/promo.jpg" alt="Промо изображение">
+				</div>
+				<b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>	
+			</section>
 			<section class="features">
 				<h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
 			</section>
 			<section class="hotels">
 				<h2>Заинтересовались?</h2>
 				<p>
-					Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинец в Седоне
+					Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
 				</p>
 			</section>
 		</main>
-		<footer>
+		<footer class="page-footer">
 			<p class="footer-hashtag">
 				#visitsedona
 			</p>
-			<div>
-				<div class="footer-social">
-					<ul>
-						<li>
-							<a href="#" class="social-button">
-								Твитор
-							</a>
-						</li>
-						<li>
-							<a href="#" class="social-button">
-								Фейсбук
-							</a>
-						</li>
-						<li>
-							<a href="#" class="social-button">
-								Ютуб
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<ul class="footer-social">
+				<li>
+					<a href="#" class="social-button">
+						Твитор
+					</a>
+				</li>
+				<li>
+					<a href="#" class="social-button">
+						Фейсбук
+					</a>
+				</li>
+				<li>
+					<a href="#" class="social-button">
+						Ютуб
+					</a>
+				</li>
+			</ul>
 			<p class="footer-copyright">
-				website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy" alt="Сайт «Html Academy»"></a>
+				website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/htmlacademy.svg" alt="Сайт «Html Academy»"></a>
 			</p>
 		</footer>
 	</body>
