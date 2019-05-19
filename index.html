@@ -33,33 +33,35 @@
 				<p>
 					Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
 				</p>
+				<button class="button-modal-window">Поиск гостиницы в седоне</button>
+				<form class="modal-window" method="post" action="https://echo.htmlacademy.ru">
+					<p class="wrap-arrivel">
+						<label class="arrivel">
+							Дата заезда:
+							<input type="text" name="arrivel-date">
+						</label>
+					</p>
+					<p class="wrap-departure">
+						<label class="departure">
+							Дата выезда:
+							<input type="text" name="date-of-departure">
+						</label>
+					</p>
+					<div class="half-width wrap-adults">
+						<span class="adults">Взрослые:</span>
+						<button type="button" name="button-minus-adults">Минус</button>
+						<input type="number" name="amount-of-adults" class="amount-of-adults" value="0">
+						<button type="button" name="button-plus-adults">Плюс</button>
+					</div>
+					<div class="half-width wrap-children">
+						<span class="children">Дети:</span>	
+						<button type="button" name="button-minus-children">Минус</button>
+						<input type="number" name="amount-of-children" class="amount-of-children" value="0">
+						<button type="button" name="button-plus-children">Плюс</button>
+					</div>
+					<button type="submit" name="button-find" class="find">Найти</button>
+				</form>
 			</section>
-			<form class="modal-window">
-				<fieldset>
-					<legend>Поиск гостиницы в седоне</legend>
-					<label class="arrivel">
-						Дата заезда:
-						<input type="text" name="arrivel date">
-					</label><br>
-					<label class="departure">
-						Дата выезда:
-						<input type="text" name="date of departure">
-					</label><br>
-					<span class="adults">Взрослые:</span>
-					<div class="wrap-buttons-adults">
-						<button type="button">Минус</button>
-						<span class="amount-of-children">0</span>
-						<button type="button">Плюс</button>
-					</div>
-					<span class="children">Дети:</span>
-					<div class="wrap-buttons-children">	
-						<button type="button">Минус</button>
-						<span class="amount of adults">0</span>
-						<button type="button">Плюс</button>
-					</div>
-					<button type="submit" class="find">Найти</button>
-				</fieldset>
-			</form>
 		</main>
 		<footer class="page-footer">
 			<p class="footer-hashtag">

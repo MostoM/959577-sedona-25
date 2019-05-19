@@ -21,6 +21,45 @@
 			</nav>
 		</header>
 		<main class="main-content">
+			<section class="filters">
+				<form method="post" class="form-filters" action="https://echo.htmlacademy.ru">
+					<fieldset class="filters infrastructure">
+						<legend>Инфраструктура:</legend>
+						<label>
+							Бассейн
+							<input type="checkbox" name="pool" class="filter filter-pool" checked="true">
+						</label>
+						<label>
+							Парковка
+							<input type="checkbox" name="parking" class="filter filter-parking">
+						</label>
+						<label>
+							Wi-Fi
+							<input type="checkbox" name="wi-fi" class="filter filter-wi-fi">
+						</label>
+					</fieldset>
+					<fieldset class="filters type-if-housing">
+						<legend>Тип жилья:</legend>
+						<label>
+							Гостиница
+							<input type="checkbox" name="hotel" class="filter filter-hotel" checked="true">
+						</label>
+						<label>
+							Мотель
+							<input type="checkbox" name="motel" class="filter filter-motel" checked="true">
+						</label>
+						<label>
+							Wi-Fi
+							<input type="checkbox" name="apartment" class="filter filter-apartment" checked="true">
+						</label>
+					</fieldset>
+					<fieldset class="range">
+						<legend>Стоимость в сутки:</legend>
+						<!--Место для выбора цены-->
+					</fieldset>
+					<button type="submit" name="show-result" class="show-result">Показать</button>
+				</form>
+			</section>
 			<section class="search-results">
 				<div class="search-results-item">
 					<div class="image-wrap">
