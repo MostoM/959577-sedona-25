@@ -33,6 +33,37 @@
 				<p>
 					Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
 				</p>
+				<button class="button-modal-window">Поиск гостиницы в седоне</button>
+				<form class="modal-window" method="post" action="https://echo.htmlacademy.ru">
+					<p class="wrap-arrivel">
+						<label class="arrivel">
+							Дата заезда:
+							<input type="text" name="arrivel-date">
+						</label>
+					</p>
+					<p class="wrap-departure">
+						<label class="departure">
+							Дата выезда:
+							<input type="text" name="date-of-departure">
+						</label>
+					</p>
+					<div class="half-width wrap-adults">
+						<label for="amount-of-adults" class="adults">Взрослые:</label>
+						<button type="button" name="button-minus-adults" aria-label="минус">-</button>
+						<input type="number" id="amount-of-adults" name="amount-of-adults" class="amount-of-adults" value="0">
+						<button type="button" name="button-plus-adults" aria-label="плюс">+</button>
+					</div>
+					<div class="half-width wrap-children">
+						<label for="amount-of-children" class="children">Дети:</label>	
+						<button type="button" name="button-minus-children" aria-label="минус">-</button>
+						<input type="number" name="amount-of-children" class="amount-of-children" id="amount-of-children" value="0">
+						<button type="button" name="button-plus-children" aria-label="плюс">+</button>
+					</div>
+					<button type="submit" name="button-find" class="find">Найти</button>
+				</form>
+				<div class="map">
+					<img src="img/index-map.jpg" alt="Местоположение" width="1718" height="748">	
+				<div>
 			</section>
 		</main>
 		<footer class="page-footer">
@@ -41,17 +72,17 @@
 			</p>
 			<ul class="footer-social">
 				<li>
-					<a href="#" class="social-button">
+					<a href="#" class="social-button visually-hidden">
 						Твитор
 					</a>
 				</li>
 				<li>
-					<a href="#" class="social-button">
+					<a href="#" class="social-button visually-hidden">
 						Фейсбук
 					</a>
 				</li>
 				<li>
-					<a href="#" class="social-button">
+					<a href="#" class="social-button visually-hidden">
 						Ютуб
 					</a>
 				</li>
