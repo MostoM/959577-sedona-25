@@ -1,10 +1,8 @@
 body {
   margin: 0;
-  padding: 0;
-
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 26px;
   font-size: 14px;
 }
@@ -13,13 +11,14 @@ body {
 	background-color: #fff;
 }
 
-.main-navigation ul{
+.site-navigation{
 	list-style: none;
 }
 
-.main-navigation a{
+.site-navigation a{
 	text-decoration: none;
 	color: #000;
+	font-weight: 700;
 }
 
 .main-navigation a:hover,
@@ -31,21 +30,20 @@ body {
 	color: #cecece;
 }
 
-.main-navigation .active:active,
-.main-navigation .active:hover,
-.main-navigation .active:focus,
+
 .main-navigation .active{
 	color: #766357;	
 }
 
 .page-content .promo{
-	background-image: url("img/intro-background.jpg");
+	background-image: url("../img/intro-background.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
 
 .promo b{
 	font-size: 21px;
+	font-weight: 700;
 }
 
 .features p{
@@ -62,17 +60,26 @@ body {
 	color: #333;
 }
 
-.hotels .button-modal-window{
+.button-modal-window{
 	font-size: 21px;
+	font-weight: 700;
+	color: #fff;
 }
 
-.hotels .find{
+.arrivel,
+.departure{
+	font-weight: 700px;
+}
+
+.find{
 	font-size: 21px;
 	color: #fff;
+	font-weight: 700px;
 }
 
 .footer-hashtag{
 	font-size: 21px;
+	font-weight: 700;
 }
 
 .filters-item{
@@ -83,11 +90,20 @@ body {
 	font-size: 16px;
 	line-height: 21px;
 	color: #fff;
+	font-weight: 700;
 }
 
-.filters-item .label-filter{
+.label-filter{
 	font-size: 14px;
 	line-height: 21px;
+	color: #fff;
+}
+
+.form-filters{
+	background-image: url("../img/filter-background.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .show-result{
@@ -100,8 +116,14 @@ body {
 	line-height: 21px;
 }
 
-.description a{
+.btn a{
 	color: #fff;
+}
+
+.description h2 a{
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
 }
 
 .search-result-item h2{
@@ -113,6 +135,6 @@ body {
 	color: #666;
 }
 
-.filters{
-	color: #fff;
+.filter-list{
+	list-style: none;
 }
