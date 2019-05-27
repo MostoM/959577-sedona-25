@@ -13,12 +13,40 @@ body {
 
 .site-navigation{
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	align-items: center;
 }
 
 .site-navigation a{
 	text-decoration: none;
 	color: #000;
 	font-weight: 700;
+}
+
+.main-navigation{
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main-navigation .logo{
+	order: 1;
+}
+
+.main-navigation .logo img{
+	display: block;
+	order: 1;
+}
+
+.navigation-item{
+	width: 265px;
+	text-align: center;
+}
+
+.right-site-navigation{
+	order: 2;
 }
 
 .main-navigation a:hover,
@@ -35,29 +63,56 @@ body {
 	color: #766357;	
 }
 
-.page-content .promo{
+.promo-wrap{
 	background-image: url("../img/intro-background.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 800px;
+	margin-bottom: 65px;
+}
+
+.promo-img-wrap{
+	margin: 0 auto;
+	width: 460px;
+	padding-top: 75px;
 }
 
 .promo b{
+	display: block;
 	font-size: 21px;
 	font-weight: 700;
+	margin-bottom: 40px;
 }
 
-.features p{
+.promo p{
+	margin: 0;
 	color: #333;
+}
+
+.promo{
+	margin-bottom: 55px;
+	text-align: center;
+}
+
+.features{
+	margin-bottom: 55px;
+}
+
+.hotels{
+	text-align: center;
 }
 
 .hotels h2{
 	font-size: 30px;
 	line-height:36px;
+	margin-bottom: 35px;
 }
 
 .hotels p{
 	line-height:24px;
 	color: #333;
+	padding-bottom: 50px;
 }
 
 .button-modal-window{
@@ -80,6 +135,12 @@ body {
 .footer-hashtag{
 	font-size: 21px;
 	font-weight: 700;
+	margin: 0;
+}
+
+.footer-copyright{
+	margin: 0;
+	margin-left: 230px;
 }
 
 .filters-item{
@@ -104,6 +165,10 @@ body {
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.wrap-filters{
+	display: flex;
 }
 
 .show-result{
@@ -137,4 +202,32 @@ body {
 
 .filter-list{
 	list-style: none;
+}
+
+.main-footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-social{
+	margin-left: 255px;
+}
+
+.wrap-content{
+	width: 1055px;
+	margin: 0 auto;
+}
+
+.filters-item ul{
+	margin: 0;
+	padding: 0;
+}
+
+.center-column{
+	margin-left: 75px;
+}
+
+.right-column{
+	margin-left: auto;
 }

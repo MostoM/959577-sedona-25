@@ -15,59 +15,69 @@
 						<img src="img/logo-sedona.svg" alt="Логотип сайта «Sedona»" width="140" height="72">
 					</a>
 				</div>
-				<ul class="site-navigation">
-					<li><a href="info.html">Информация</a></li>
-					<li><a href="#">Фото и видео</a></li>
-					<li><a href="#">Карта штата</a></li>
-					<li><a class="active">Гостиницы</a></li>
+				<ul class="left-site-navigation site-navigation">
+					<li class="navigation-item"><a href="#">Информация</a></li>
+					<li class="navigation-item"><a href="#">Фото и видео</a></li>
+				</ul>
+				<ul class="right-site-navigation site-navigation">
+					<li class="navigation-item"><a href="#">Карта штата</a></li>
+					<li class="navigation-item"><a href="inner.html">Гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="main-content">
 			<section class="filters">
 				<form method="post" class="form-filters" action="https://echo.htmlacademy.ru">
-					<fieldset class="filters-item infrastructure">
-						<legend>Инфраструктура:</legend>
-						<ul class="filter-list">
-							<li>
-								<input type="checkbox" id="pool" name="pool" class="visually-hidden filter filter-pool" checked>
-								<label class="label-filter" for="pool">Бассейн</label>
-							</li>
-							<li>
-								<input type="checkbox" id="parking" name="parking" class="visually-hidden filter filter-parking">
-								<label class="label-filter" for="parking">Парковка</label>
-							</li>
-							<li>
-								<input type="checkbox" id="wi-fi" name="wi-fi" class="visually-hidden filter filter-wi-fi">
-								<label class="label-filter" for="wi-fi">Wi-Fi</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="filters-item type-if-housing">
-						<legend>Тип жилья:</legend>
-						<ul class="filter-list">
-							<li>
-								<input type="checkbox" id="hotel" name="hotel" class="visually-hidden filter filter-hotel" checked>
-								<label class="label-filter" for="hotel">Гостиница</label>
-							</li>
-							<li>
-								<input type="checkbox" id="motel" name="motel" class="visually-hidden filter filter-motel" checked>
-								<label class="label-filter" for="motel">Мотель</label>
-							</li>
-							<li>
-								<input type="checkbox" id="apartment" name="apartment" class="visually-hidden filter filter-apartment" checked>
-								<label class="label-filter" for="apartment">Апартаменты</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="range filters-item">
-						<legend>Стоимость в сутки:</legend>
-						<!--Место для выбора цены-->
-					</fieldset>
+					<div class="wrap-filters wrap-content">
+						<div class="left-column">
+							<fieldset class="filters-item infrastructure">
+								<legend>Инфраструктура:</legend>
+								<ul class="filter-list">
+									<li>
+										<input type="checkbox" id="pool" name="pool" class="visually-hidden filter filter-pool" checked>
+										<label class="label-filter" for="pool">Бассейн</label>
+									</li>
+									<li>
+										<input type="checkbox" id="parking" name="parking" class="visually-hidden filter filter-parking">
+										<label class="label-filter" for="parking">Парковка</label>
+									</li>
+									<li>
+										<input type="checkbox" id="wi-fi" name="wi-fi" class="visually-hidden filter filter-wi-fi">
+										<label class="label-filter" for="wi-fi">Wi-Fi</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+						<div class="center-column">
+							<fieldset class="filters-item type-if-housing">
+								<legend>Тип жилья:</legend>
+								<ul class="filter-list">
+									<li>
+										<input type="checkbox" id="hotel" name="hotel" class="visually-hidden filter filter-hotel" checked>
+										<label class="label-filter" for="hotel">Гостиница</label>
+									</li>
+									<li>
+										<input type="checkbox" id="motel" name="motel" class="visually-hidden filter filter-motel" checked>
+										<label class="label-filter" for="motel">Мотель</label>
+									</li>
+									<li>
+										<input type="checkbox" id="apartment" name="apartment" class="visually-hidden filter filter-apartment" checked>
+										<label class="label-filter" for="apartment">Апартаменты</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+						<div class="right-column">
+							<fieldset class="range filters-item">
+								<legend>Стоимость в сутки:</legend>
+								<!--Место для выбора цены-->
+							</fieldset>
+						</div>
+					</div>
 					<button type="submit" name="show-result" class="show-result">Показать</button>
 				</form>
 			</section>
-			<section class="search-results">
+			<section class="search-results wrap-content">
 				<div class="search-results-item">
 					<div class="image-wrap">
 						<img src="img/hotel.jpg" alt="Изображение гостиницы" width="135" height="90">
