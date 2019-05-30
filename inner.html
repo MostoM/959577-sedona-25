@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -17,17 +17,17 @@
 						</a>
 					</div>
 					<ul class="site-navigation">
-						<li class="navigation-item"><a href="#">Информация</a></li>
-						<li class="navigation-item"><a href="#">Фото и видео</a></li>
-						<li class="navigation-item"><a href="#">Карта штата</a></li>
-						<li class="navigation-item"><a href="inner.html">Гостиницы</a></li>
+						<li class="navigation-item left"><a href="#">Информация</a></li>
+						<li class="navigation-item left"><a href="#">Фото и видео</a></li>
+						<li class="navigation-item right"><a href="#">Карта штата</a></li>
+						<li class="navigation-item right"><a class="active">Гостиницы</a></li>
 					</ul>
 				</nav>
 			</header>
 			<main class="main-content">
 				<section class="filters">
 					<form method="post" class="form-filters" action="https://echo.htmlacademy.ru">
-						<div class="wrap-filters inner-wrap">
+						<div class="wrap-filters">
 							<div class="left-column">
 								<fieldset class="filters-item infrastructure">
 									<legend>Инфраструктура:</legend>
@@ -77,68 +77,56 @@
 					</form>
 				</section>
 				<section class="search-results">
-					<div class="wrap-result-item">
-						<div class="inner-wrap">
-							<div class="search-result-item">
-								<div class="image-wrap">
-									<img src="img/hotel.jpg" alt="Изображение гостиницы" width="135" height="90">
-								</div>
-								<div class="description">
-									<h2><a href="#">Amara resort & spa</a></h2>
-									<div class="housing-description">
-										<span class="type-housing">Гостиница</span>
-										<span class="price-housing">От 4000 Р.</span>
-									</div>
-									<div class="btn">
-										<a href="#">Подробнее</a>
-										<a href="#">Забронировать</a>
-									</div>
-								</div>
-								<span class="rating">Рейтинг: 8,5</span>
+					<div class="search-result-item">
+						<div class="image-wrap">
+							<img src="img/hotel.jpg" alt="Изображение гостиницы" width="135" height="90">
+						</div>
+						<div class="description">
+							<h2><a href="#">Amara resort & spa</a></h2>
+							<div class="housing-description">
+								<span class="type-housing">Гостиница</span>
+								<span class="price-housing">От 4000 Р.</span>
+							</div>
+							<div class="btn">
+								<a href="#" class="more">Подробнее</a>
+								<a href="#" class="book">Забронировать</a>
 							</div>
 						</div>
+						<span class="rating">Рейтинг: 8,5</span>
 					</div>
-					<div class="wrap-result-item">
-						<div class="inner-wrap">
-							<div class="search-result-item">
-								<div class="image-wrap">
-									<img src="img/motel.jpg" alt="Изображение мотеля" width="135" height="90">
-								</div>
-								<div class="description">
-									<h2><a href="#">Desert quail inn</a></h2>
-									<div class="housing-description">
-										<span class="type-housing">Мотель</span>
-										<span class="price-housing">От 3000 Р.</span>
-									</div>
-									<div class="btn">
-										<a href="#">Подробнее</a>
-										<a href="#">Забронировать</a>
-									</div>
-								</div>
-								<span class="rating">Рейтинг: 8,9</span>
+					<div class="search-result-item">
+						<div class="image-wrap">
+							<img src="img/motel.jpg" alt="Изображение мотеля" width="135" height="90">
+						</div>
+						<div class="description">
+							<h2><a href="#">Desert quail inn</a></h2>
+							<div class="housing-description">
+								<span class="type-housing">Мотель</span>
+								<span class="price-housing">От 3000 Р.</span>
+							</div>
+							<div class="btn">
+								<a href="#" class="more">Подробнее</a>
+								<a href="#" class="book">Забронировать</a>
 							</div>
 						</div>
+						<span class="rating">Рейтинг: 8,9</span>
 					</div>
-					<div class="wrap-result-item">
-						<div class="inner-wrap">
-							<div class="search-result-item">
-								<div class="image-wrap">
-									<img src="img/apartment.jpg" alt="Изображение апартаментов"width="135" height="90">
-								</div>
-								<div class="description">
-									<h2><a href="#">Villas at poco diablo</a></h2>
-									<div class="housing-description">
-										<span class="type-housing">Апартаменты</span>
-										<span class="price-housing">от 2000 Р.</span>
-									</div>
-									<div class="btn">
-										<a href="#">Подробнее</a>
-										<a href="#">Забронировать</a>
-									</div>
-								</div>
-								<span class="rating">Рейтинг: 9,2</span>
+					<div class="search-result-item">
+						<div class="image-wrap">
+							<img src="img/apartment.jpg" alt="Изображение апартаментов"width="135" height="90">
+						</div>
+						<div class="description">
+							<h2><a href="#">Villas at poco diablo</a></h2>
+							<div class="housing-description">
+								<span class="type-housing">Апартаменты</span>
+								<span class="price-housing">от 2000 Р.</span>
 							</div>
-						</div>								
+							<div class="btn">
+								<a href="#" class="more">Подробнее</a>
+								<a href="#" class="book">Забронировать</a>
+							</div>
+						</div>
+						<span class="rating">Рейтинг: 9,2</span>	
 					</div>
 				</section>
 			</main>
