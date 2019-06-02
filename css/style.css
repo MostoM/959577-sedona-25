@@ -43,6 +43,7 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: -1px;
+	z-index: 1;
 }
 
 .main-navigation .logo img{
@@ -65,9 +66,22 @@ body {
 	color: #766357;	
 }
 
+.promo-wrap::after{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 90px;
+	background-image: url("../img/intro-mask.svg");
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	bottom: -2px;
+}
+
 .promo-wrap{
+	position: relative;
 	background-image: url("../img/intro-background.jpg");
-	background-position: top center;
+	background-position: 50% 25%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 508px;
@@ -81,11 +95,13 @@ body {
 }
 
 .promo b{
+	margin: 0 auto;
 	display: block;
 	font-size: 21px;
 	font-weight: 700;
 	margin-bottom: 40px;
 	color: #000;
+	width: 450px;
 }
 
 .promo p{
@@ -166,6 +182,7 @@ body {
 	box-sizing: border-box;
 	padding: 8px 10px;
 	outline: none;
+	font-weight: 700;
 }
 
 .info-label input:hover{
@@ -179,6 +196,7 @@ body {
 
 .half-width input{
 	text-align: center;
+	font-weight: 700;
 }
 
 .part-of-input{
@@ -217,12 +235,39 @@ body {
 	justify-content: center;
 }
 
-.btn-input:hover{
-	color: #000;
+.btn-input:hover span,
+.btn-input:hover span::after,
+.btn-input:focus span,
+.btn-input:focus span::after{
+	background-color: #000;
 }
 
-.btn-input:active{
-	color: #81b3d2;
+.btn-input:active span,
+.btn-input:active span::after{
+	background-color: #81b3d2;
+}
+
+.minus{
+	display: block;
+	height: 3px;
+	width: 12px;
+	background-color: #a9a9a9;
+}
+
+.plus{
+	display: block;
+	height: 3px;
+	width: 11px;
+	background-color: #a9a9a9;
+}
+
+.plus::after{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 11px;
+	background-color: #a9a9a9;
+	transform: rotate(90deg);
 }
 
 .date-btn:active{
@@ -423,7 +468,7 @@ body {
 .search-result-item{
 	display: flex;
 	align-items: center;
-	border-bottom: 2px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 	padding: 30px 72px;
 }
 
@@ -599,11 +644,10 @@ body {
 .features-item{
 	width: 400px;
 }
-
 .features-item h3{
-	margin: 0;
-	margin-top: 47px;
-	margin-bottom: 25px;
+	padding-top: 47px;
+	font-size: 21px;
+	line-height: 21px;
 }
 
 .advantages-list{
@@ -616,9 +660,43 @@ body {
 	width: 400px;
 }
 
+.housing{
+	background-image: url(../img/icon-1.svg);
+	background-size: 72px 75px;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+}
+
+.food{
+	background-image: url(../img/icon-2.svg);
+	background-size: 72px 75px;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+}
+
+.presents{
+	background-image: url(../img/icon-3.svg);
+	background-size: 72px 75px;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+}
+
 .blue-bg{
 	background-color: #81b3d2;
 	color: #fff;
+}
+
+.blue-bg h3{
+	padding-top: 47px;
+	width: 160px;
+	margin: 0 auto;
+}
+
+.gray-bg h3{
+	padding-top: 47px;
+	margin: 0;
+	width: 150px;
+	margin: 0 auto;
 }
 
 .wide{
@@ -638,19 +716,17 @@ body {
 .description-features{
 	width: 305px;
 	margin: 0 auto;
-	margin-top: 30px;
+	padding-top: 25px;
 }
 
 .advantages-item h3{
 	margin: 0;
-	margin-top: 30px;
-	margin-bottom: 25px;
+	padding-top: 154px;
 }
 
 .advantages-item .description-features{
 	width: 300px;
 	margin: 0 auto;
-	margin-top: 30px;
 }
 
 .gray-bg .description-features{
@@ -662,7 +738,7 @@ body {
 }
 
 .advantages-item .description-features{
-	margin-bottom: 85px;
+	margin-bottom: 80px;
 }
 
 .gray-bg .description-features{
