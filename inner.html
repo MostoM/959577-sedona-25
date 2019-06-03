@@ -69,7 +69,17 @@
 							<div class="right-column">
 								<fieldset class="range filters-item">
 									<legend>Стоимость в сутки:</legend>
-									<!--Место для выбора цены-->
+									<div class="price-controls">
+										<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+										<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+									</div>
+									<div class="range-controls">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+										<div class="range-toggle range-toggle-min"></div>
+										<div class="range-toggle range-toggle-max"></div>
+ 								 	</div>
 								</fieldset>
 							</div>
 							<button type="submit" name="show-result" class="show-result">Показать</button>
@@ -92,7 +102,9 @@
 								<a href="#" class="book">Забронировать</a>
 							</div>
 						</div>
-						<span class="rating">Рейтинг: 8,5</span>
+						<div class="wrap-rating">
+							<span class="rating">Рейтинг: 8,5</span>
+						</div>
 					</div>
 					<div class="search-result-item">
 						<div class="image-wrap">
@@ -109,7 +121,9 @@
 								<a href="#" class="book">Забронировать</a>
 							</div>
 						</div>
-						<span class="rating">Рейтинг: 8,9</span>
+						<div class="wrap-rating">
+							<span class="rating">Рейтинг: 8,9</span>
+						</div>
 					</div>
 					<div class="search-result-item">
 						<div class="image-wrap">
@@ -126,7 +140,9 @@
 								<a href="#" class="book">Забронировать</a>
 							</div>
 						</div>
-						<span class="rating">Рейтинг: 9,2</span>	
+						<div class="wrap-rating">
+							<span class="rating">Рейтинг: 9,2</span>
+						</div>
 					</div>
 				</section>
 			</main>
@@ -137,16 +153,25 @@
 				<ul class="footer-social">
 					<li>
 						<a href="#" class="social-button">
+							<svg width="17" height="15" viewBox="0 0 17 15">
+								<path fill="#fff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+							</svg>
 							<span class="visually-hidden">Твитор</span>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button">
+							<svg width="12" height="22" viewBox="0 0 12 22">
+								<path fill="#fff" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+							</svg>
 							<span class="visually-hidden">Фейсбук</span>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button">
+							<svg width="20" height="16" viewBox="0 0 20 16">
+								<path fill="#fff" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+							</svg>
 							<span class="visually-hidden">Ютуб</span>
 						</a>
 					</li>
