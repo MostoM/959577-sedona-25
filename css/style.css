@@ -909,3 +909,37 @@ body {
 	color: #000000;
 	background: #ffffff;
 }
+
+.filter + label{
+	position: relative;
+	left: 40px;
+}
+
+.filter + label:before{
+	content: "";
+	left: -40px;
+	position: absolute;
+	width: 19px;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	height: 19px;
+	background-color: transparent;
+}
+
+.filter + label:after{
+	left: -35px;
+	position: absolute;
+	width: 18px;
+	border: 4px solid #fff;
+	border-radius: 2px;
+	border-top: none;
+	border-right: none;
+	height: 6px;
+	bottom: 55%;
+	transform: rotate(-45deg);
+	background-color: transparent;
+}
+
+.filter:checked + label:after{
+	content: "";
+}
