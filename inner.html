@@ -82,11 +82,30 @@
  								 	</div>
 								</fieldset>
 							</div>
-							<button type="submit" name="show-result" class="show-result">Показать</button>
+							<button type="submit" name="show-result" class="show-result btn-click">Показать</button>
 						</div>
 					</form>
 				</section>
 				<section class="search-results">
+					<div class="sorting">
+						<span class="find-sort">Найдено: 3</span>
+						<span class="type">сортировка:</span>
+						<a class="price-sort sort-item active-sort">По цене</a>
+						<a href="#" class="type-sort sort-item">По типу</a>
+						<a href="#" class="rating-sort sort-item">По рейтингу</a>
+						<div class="order">
+							<a href="#">
+								<svg class="dir-up dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#231F20" d="M5.5 0L0 10h11z"/>
+								</svg>
+							</a>
+							<a>
+								<svg class="dir-down dir dir-active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#231F20" d="M5.5 10L0 0h11"/>
+								</svg>
+							</a>
+						</div>
+					</div>
 					<div class="search-result-item">
 						<div class="image-wrap">
 							<img src="img/hotel.jpg" alt="Изображение гостиницы" width="135" height="90">
@@ -103,6 +122,7 @@
 							</div>
 						</div>
 						<div class="wrap-rating">
+							<div class="four-stars star"><span class="visually-hidden">4 звезды</span></div>
 							<span class="rating">Рейтинг: 8,5</span>
 						</div>
 					</div>
@@ -122,6 +142,7 @@
 							</div>
 						</div>
 						<div class="wrap-rating">
+							<div class="three-stars star"><span class="visually-hidden">3 звезды</span></div>
 							<span class="rating">Рейтинг: 8,9</span>
 						</div>
 					</div>
@@ -141,6 +162,7 @@
 							</div>
 						</div>
 						<div class="wrap-rating">
+							<div class="two-stars star"><span class="visually-hidden">2 звезды</span></div>
 							<span class="rating">Рейтинг: 9,2</span>
 						</div>
 					</div>
