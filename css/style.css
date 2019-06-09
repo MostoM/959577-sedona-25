@@ -575,6 +575,9 @@ input.part-of-input:focus{
 
 .map img{
 	display: block;
+	position: absolute;
+	top: 0;
+	z-index: -1;
 }
 
 .image-wrap img{
@@ -1063,4 +1066,26 @@ input.part-of-input:focus{
 
 .order a{
 	text-decoration: none;
+}
+
+@keyframes error{
+	20% {
+		transform: translate(30px);
+	}
+	40% {
+		transform: translate(-30px);	
+	}
+	60%{
+		transform: translate(15px);
+	}
+	80%{
+		transform: translate(-15px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
+
+.error{
+	animation: error 0.6s;
 }
