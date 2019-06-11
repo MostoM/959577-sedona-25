@@ -353,7 +353,7 @@ input.part-of-input:focus{
 	line-height: 26px;
 	font-size: 21px;
 	color: #fff;
-	font-weight: 700px;
+	font-weight: 700;
 	width: 100%;
 	box-sizing: border-box;
 	min-height: 60px;
