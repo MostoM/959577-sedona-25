@@ -179,7 +179,6 @@ body {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	position: relative;
 }
 
 .children{
@@ -246,7 +245,7 @@ input.part-of-input:focus{
 .date-btn-wrap{
 	position: absolute;
 	top: 8px;
-	right: 15px;
+	right: 0;
 	border: none;
 	background-color: transparent;
 }
@@ -329,12 +328,13 @@ input.part-of-input:focus{
 .wrap-arrivel{
 	margin-top: 0;
 	margin-bottom: 30px;
-
+	position: relative;
 }
 
 .wrap-departure{
 	margin: 0 auto;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 .arrivel,
