@@ -1082,15 +1082,19 @@ input.part-of-input:focus{
 	20% {
 		transform: translate(30px);
 	}
+
 	40% {
 		transform: translate(-30px);	
 	}
+
 	60%{
 		transform: translate(15px);
 	}
+
 	80%{
 		transform: translate(-15px);
 	}
+	
 	100% {
 		transform: translate(0);
 	}
