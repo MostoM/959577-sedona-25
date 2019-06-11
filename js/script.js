@@ -31,7 +31,7 @@ try{
 	isStorageSupport = false;
 }
 modalWindow.addEventListener("submit", function(evt){
-	if (!dateArrivel.value || !dateArrivel.value || !adults.value || !children.value) {
+	if (!dateArrivel.value || !dateDeparture.value || !adults.value || !children.value) {
 		evt.preventDefault();
 		modalWindow.classList.remove("error");
 		modalWindow.offsetWidth = modalWindow.offsetWidth;
