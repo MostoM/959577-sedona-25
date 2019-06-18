@@ -1,4 +1,4 @@
-body {
+body{
 	margin: 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
@@ -62,7 +62,7 @@ body {
 	z-index: 1;
 }
 
-.main-navigation .logo img{
+.logo img{
 	display: block;
 }
 
@@ -255,7 +255,7 @@ input.part-of-input:focus{
 }
 
 .half-width input::-webkit-outer-spin-button,
-.half-width input::-webkit-inner-spin-button {
+.half-width input::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin: 0;
 }
@@ -442,12 +442,12 @@ input.part-of-input:focus{
 	margin-top: 11px;
 }
 
-.footer-copyright a:hover path,
-.footer-copyright a:focus path{
+.logo-footer:hover path,
+.logo-footer:focus path{
 	fill: #81b3d2;
 }
 
-.footer-copyright a:active path{
+.logo-footer:active path{
 	fill: #bdbbbc;
 }
 
@@ -550,29 +550,29 @@ input.part-of-input:focus{
 	margin-top: 15px;
 }
 
-.description h2 a{
+.desc-caption a{
 	font-weight: 700;
 	color: #000;
 	text-decoration: none;
 	outline: none;
 }
 
-.description h2{
+.desc-caption{
 	-webkit-transform: translateY(-6px);
 	        transform: translateY(-6px);
 	width: 100%;
 }
 
-.description h2 a:hover,
-.description h2 a:focus{
+.desc-caption a:hover,
+.desc-caption a:focus{
 	color: #81b3d2;
 }
 
-.description h2 a:active{
+.desc-caption a:active{
 	color: #cacaca;
 }
 
-.description h2{
+.desc-caption{
 	display: block;
 	margin: 0;
 	font-size: 21px;
@@ -748,7 +748,7 @@ input.part-of-input:focus{
 	margin-top: 19px;
 }
 
-.filter-list li input{
+.filter-list .filter{
 	padding: 0;
 	margin: 0;
 }
@@ -1164,8 +1164,6 @@ input.part-of-input:focus{
 	border: none;
 	border-bottom: 1px dashed transparent;
 }
-
-
 
 .active-sort{
 	color: #81b3d2;
