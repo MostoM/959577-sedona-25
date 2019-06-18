@@ -15,6 +15,8 @@ var minusAdults = modalWindow.querySelector("[name=button-minus-adults]");;
 var plusChildren = modalWindow.querySelector("[name=button-plus-children]");;
 var minusChildren = modalWindow.querySelector("[name=button-minus-children]"); 
 
+modalWindow.classList.add("hide-form");
+
 if (storage) {
 	dateArrivel.value = storage;
 	dateDeparture.value = storage;
