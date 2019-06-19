@@ -162,6 +162,7 @@ body{
 	transition-property: -webkit-transform;
 	transition-property: transform;
 	transition-property: transform, -webkit-transform;
+	z-index: 1;
 }
 
 .modal-window{
@@ -607,7 +608,6 @@ input.part-of-input:focus{
 	list-style: none;
 }
 
-
 .page-footer{
 	position: relative;
 	background-color: rgba(255, 255, 255, 0.9);
@@ -679,9 +679,10 @@ input.part-of-input:focus{
 
 .map img{
 	display: block;
-	position: absolute;
-	top: 0;
-	z-index: -1;
+}
+
+.map .hide{
+	display: none;
 }
 
 .image-wrap img{

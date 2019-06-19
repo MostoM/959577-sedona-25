@@ -15,6 +15,12 @@ var minusAdults = modalWindow.querySelector("[name=button-minus-adults]");;
 var plusChildren = modalWindow.querySelector("[name=button-plus-children]");;
 var minusChildren = modalWindow.querySelector("[name=button-minus-children]"); 
 
+var map_img = document.querySelector(".map-img");
+var map_int = document.querySelector(".map-int");
+
+map_int.classList.remove("hide");
+map_img.classList.add("hide");
+
 modalWindow.classList.add("hide-form");
 
 if (storage) {
